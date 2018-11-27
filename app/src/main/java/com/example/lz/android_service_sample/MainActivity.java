@@ -20,16 +20,10 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
-    public void onDoubleProcessClick(View view) {
-        startService(new Intent(this, CoreService.class));
-        startService(new Intent(this, RemoteService.class));
+    public void onDoubleServiceGuardClick(View view){
+        Intent intent = new Intent(this, DoubleServiceGuardActivity.class);
+        startActivity(intent);
     }
 
-    public void stopCore(View view){
-        stopService(new Intent(this, CoreService.class));
-    }
 
-    public void stopRemote(View view){
-        stopService(new Intent(this, RemoteService.class));
-    }
 }

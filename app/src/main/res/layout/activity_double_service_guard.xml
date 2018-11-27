@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".DoubleServiceGuardActivity">
+
 
     <Button
         android:layout_width="match_parent"
@@ -13,8 +13,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="15dp"
-        android:onClick="onSimpleDemoClick"
-        android:text="一个简单的demo" />
+        android:onClick="onDoubleProcessClick"
+        android:text="双进程互拉" />
 
     <Button
         android:layout_width="match_parent"
@@ -22,7 +22,15 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="15dp"
-        android:onClick="onDoubleServiceGuardClick"
-        android:text="双服务守护" />
+        android:onClick="stopCore"
+        android:text="stopCore" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:onClick="stopRemote"
+        android:text="stopRemote" />
 </LinearLayout>

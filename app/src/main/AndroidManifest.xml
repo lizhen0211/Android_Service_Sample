@@ -25,13 +25,15 @@
         <service
             android:name=".CoreService"
             android:enabled="true"
-            android:process=":core"
-            android:exported="true" />
+            android:exported="true"
+            android:process=":core" />
         <service
             android:name=".RemoteService"
             android:enabled="true"
             android:exported="true"
             android:process=":remote" />
+
+        <activity android:name=".DoubleServiceGuardActivity"></activity>
     </application>
 
 </manifest>
