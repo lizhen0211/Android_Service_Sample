@@ -8,6 +8,7 @@ import android.view.View;
 
 public class MainActivity extends Activity {
     public static final String LOG_TAG = "log_tag";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,5 +18,18 @@ public class MainActivity extends Activity {
     public void onSimpleDemoClick(View view) {
         Intent intent = new Intent(this, SimpleDemoActivity.class);
         startActivity(intent);
+    }
+
+    public void onDoubleProcessClick(View view) {
+        startService(new Intent(this, CoreService.class));
+        startService(new Intent(this, RemoteService.class));
+    }
+
+    public void stopCore(View view){
+        stopService(new Intent(this, CoreService.class));
+    }
+
+    public void stopRemote(View view){
+        stopService(new Intent(this, RemoteService.class));
     }
 }

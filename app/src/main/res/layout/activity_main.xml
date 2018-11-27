@@ -4,16 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
-        android:onClick="onSimpleDemoClick"
-        android:text="一个简单的demo"
-        android:id="@+id/simple_demo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="15dp" />
+        android:layout_marginRight="15dp"
+        android:onClick="onSimpleDemoClick"
+        android:text="一个简单的demo" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:onClick="onDoubleProcessClick"
+        android:text="双进程互拉" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:onClick="stopCore"
+        android:text="stopCore" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:onClick="stopRemote"
+        android:text="stopRemote" />
+
 
 </LinearLayout>
