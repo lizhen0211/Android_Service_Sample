@@ -20,7 +20,12 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
-    public void onDoubleServiceGuardClick(View view){
+    public void onIntentServiceClick(View view) {
+        Intent intent = new Intent(this, IntentServiceActivity.class);
+        startActivity(intent);
+    }
+
+    public void onDoubleServiceGuardClick(View view) {
         Intent intent = new Intent(this, DoubleServiceGuardActivity.class);
         startActivity(intent);
     }

@@ -33,7 +33,10 @@
             android:exported="true"
             android:process=":remote" />
 
-        <activity android:name=".DoubleServiceGuardActivity"></activity>
+        <service android:name=".MyIntentService" />
+
+        <activity android:name=".DoubleServiceGuardActivity" />
+        <activity android:name=".IntentServiceActivity"/>
     </application>
 
 </manifest>
